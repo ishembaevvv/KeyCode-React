@@ -1,0 +1,36 @@
+$card-size: 250px;
+$col-text:  #395555;
+$col-white: #fff;
+$col-orange: #ff7f00;
+
+@mixin radius($size) {
+	border-radius: $size;
+}
+
+.card {
+	header {
+		@include radius(5px 5px 0 0);
+		text-align: center;
+		padding: 10px;
+		height: 30px;
+		background: $col-orange;
+		color: $col-white;
+		font-size: 16px;
+	}
+	h2 {
+		display: grid;
+		place-items: center;
+		height: 220px;
+		color: $col-text;
+		font-size: 36px;
+	}
+	@include radius(5px);
+	width: $card-size;
+	height: $card-size;
+	box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+	transition: .5s;
+
+	&:hover {
+		transform: scale(1.125);
+	}
+}

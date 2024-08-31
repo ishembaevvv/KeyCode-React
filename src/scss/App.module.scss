@@ -1,0 +1,36 @@
+$col-text:  #395555;
+$col-orange: #ff7f00;
+$col-white: #fff;
+
+@mixin fontFamily {
+	font-family: sans-serif;;
+}
+
+.App {
+	@include fontFamily;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	.keyCode {
+		color: $col-orange;
+	}
+	.key {
+		width: 800px;
+		height: 300px;
+		border: none;
+		outline: none;
+		background: $col-white;
+		margin-top: 10px;
+		text-align: center;
+		font-size: 94px;
+		color: $col-text;
+		caret-color: $col-orange;
+	}
+}
+
+.cards {
+	margin-top: 30px;
+	display: flex;
+	justify-content: space-between;
+	width: 1400px;
+}

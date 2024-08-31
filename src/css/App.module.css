@@ -1,0 +1,26 @@
+.App {
+  font-family: sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.App .keyCode {
+  color: #ff7f00;
+}
+.App .key {
+  width: 800px;
+  height: 300px;
+  border: 2px solid;
+  background: #fff;
+  margin-top: 10px;
+  text-align: center;
+  font-size: 94px;
+  color: #395555;
+}
